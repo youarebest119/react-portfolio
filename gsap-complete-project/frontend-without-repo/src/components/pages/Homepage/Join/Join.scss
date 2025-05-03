@@ -1,0 +1,42 @@
+@use "../../../../assets/theme/_var.scss" as *;
+
+.join_design {
+    background-color: $cardbg;
+    color: black;
+
+    .join_in {
+        position: relative;
+        clip-path: polygon(0px 100%, 100% 100%, 100% 100%, 0% 100%);
+
+        .join_bg {
+            width: 100%;
+            height: 100dvh;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .join_car {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+            z-index: 2;
+        }
+
+        h2 {
+            position: absolute;
+            top: 20%;
+            left: calc(50% - (94rem / 2));
+            width: 94rem;
+            font-size: 10rem;
+            font-weight: 800;
+
+            div {
+                display: inline-block;
+            }
+        }
+    }
+}

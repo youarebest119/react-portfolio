@@ -1,0 +1,59 @@
+@import "../../../assets/theme/_var.scss";
+
+.hero {
+    .hero_in {
+        padding: 3rem 0;
+        text-align: center;
+
+        h2 {
+            font-size: 4rem;
+            font-weight: 300;
+            color: $baseclr;
+            letter-spacing: 0.04em;
+            overflow: clip;
+        }
+
+        h1 {
+            font-size: 10rem;
+            letter-spacing: 0.04em;
+            font-weight: 700;
+            color: $baseclr;
+            margin: 2rem 0;
+        }
+
+        p {
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            color: $gray;
+        }
+
+        .hero_action {
+            padding-top: 3rem;
+            padding-bottom: 4rem;
+            display: flex;
+            justify-content: center;
+            overflow: clip;
+
+            >div {
+                height: 6rem;
+                width: 19.2rem;
+
+                button {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:not(:last-child) {
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+
+    video {
+        mix-blend-mode: darken;
+        height: 40rem;
+        width: 100%;
+    }
+}

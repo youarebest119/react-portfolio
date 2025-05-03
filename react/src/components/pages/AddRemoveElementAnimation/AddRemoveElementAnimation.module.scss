@@ -1,0 +1,19 @@
+@import "../../../assets/theme/_var.scss";
+
+.section {
+    padding: 100px 0;
+
+    ul {
+        max-width: 500px;
+        margin-inline: auto;
+        // overflow: hidden;
+        width: 100%;
+        height: max-content;
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

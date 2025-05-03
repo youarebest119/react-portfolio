@@ -1,0 +1,24 @@
+@import "../../../assets/theme/_var.scss";
+
+.follow_path_design {
+    padding: 100px 0;
+    // height: 1000px;
+
+    .in {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    svg {
+        position: sticky;
+        top: 0;
+        border: 2px solid white;
+        // left: 500px;
+    }
+
+    .box {
+        width: 40px;
+        height: 40px;
+        border: 2px solid red;
+    }
+}

@@ -1,0 +1,104 @@
+.header {
+    .header_in {
+        padding: 1.6rem 0;
+
+        >ul {
+            display: flex;
+
+            >li {
+                &:not(:last-child) {
+                    margin-right: 2rem;
+                }
+
+                >a {
+                    color: white;
+
+                    &:hover,
+                    &.active {
+                        color: orange;
+                    }
+                }
+
+                .header_nav_dropdown {
+                    position: relative;
+
+                    >a {
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        transition: 200ms ease-in-out;
+
+                        &::after {
+                            content: "";
+                            transition: 200ms ease-in-out;
+                            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="angle-down"><path fill="%23fff" d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"></path></svg>');
+                            background-size: 1.8rem;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            margin-left: 1rem;
+                            width: 2rem;
+                            height: 2rem;
+                            display: inline-flex;
+                        }
+                    }
+
+                    .header_nav_menu {
+                        position: absolute;
+                        visibility: hidden;
+                        opacity: 0;
+                        transform: translate(0, 2rem);
+                        background-color: rgb(44, 43, 43);
+                        border-radius: 1rem;
+                        padding: 1.6rem;
+                        top: calc(100% + 1.6rem);
+                        min-width: 16rem;
+                        transition: 200ms ease-in-out;
+                        box-shadow: 0 0 3rem 1rem rgba(white, 0.02);
+
+                        &::before {
+                            content: "";
+                            width: 100%;
+                            height: 1.6rem;
+                            position: absolute;
+                            bottom: 100%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+
+                        ul {
+                            li {
+                                &:not(:last-child) {
+                                    margin-bottom: 1.6rem;
+                                }
+
+                                a {
+                                    color: white;
+                                    transition: 200ms ease-in-out;
+
+                                    &:hover,
+                                    &.active {
+                                        color: orange;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        >a {
+                            &::after {
+                                transform: translateY(0.4rem);
+                            }
+                        }
+
+                        .header_nav_menu {
+                            visibility: visible;
+                            opacity: 1;
+                            transform: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

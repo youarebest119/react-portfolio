@@ -1,0 +1,27 @@
+@import "../../../assets/theme/_var.scss";
+
+.scroll_text_sec {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+
+    .scrollable_text {
+        position: fixed;
+        width: max-content;
+        bottom: 10px;
+        text-align: center;
+        left: 100%;
+
+        h1 {
+            font-weight: 600;
+            color: white;
+            font-size: 100px;
+            white-space: nowrap;
+
+            &.copy_text {
+                position: absolute;
+                top: 50%;
+                left: 100%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

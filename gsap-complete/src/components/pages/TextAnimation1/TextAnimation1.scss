@@ -1,0 +1,46 @@
+.text_animation_one {
+    .my_text {
+        margin-top: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 100px 30px;
+        flex-direction: column;
+        text-transform: uppercase;
+
+        h3 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 4rem;
+            margin: 2rem 0;
+            font-weight: 800;
+            color: rgb(121, 121, 59);
+            line-height: 1.6;
+
+            span {
+                display: block;
+                padding: 0.8rem 1.6rem;
+                background-color: rgb(39, 38, 38);
+                border-radius: 1rem;
+
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        p {
+            font-size: 2.4rem;
+            max-width: 60rem;
+
+            span {
+                margin-right: 0.8rem;
+                margin-bottom: 0.8rem;
+                transform-origin: bottom center;
+            }
+        }
+    }
+}

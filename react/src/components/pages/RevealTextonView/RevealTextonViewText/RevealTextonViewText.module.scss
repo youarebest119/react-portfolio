@@ -1,0 +1,16 @@
+@import "../../../../assets/theme/_var.scss";
+
+.dummy_text {
+    margin-bottom: 10rem;
+
+    li {
+        overflow: hidden;
+        text-align: center;
+
+        span {
+            font-size: 2rem;
+            font-weight: 600;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import "../../../../assets/theme/_var.scss";
+
+
+.rotate_el {
+    perspective: 1000px;
+    min-height: 360px;
+
+    .rotate_el_txt {
+        font-size: 180px;
+        font-weight: 700;
+        line-height: 2;
+        white-space: nowrap;
+        transform-style: preserve-3d;
+        width: fit-content;
+        transform-origin: 0% 30%;
+    }
+}
+
+.view_rotate {
+    perspective: 1000px;
+
+    .rotate_el_txt {
+        font-size: 180px;
+        font-weight: 700;
+        line-height: 2;
+        white-space: nowrap;
+        transform-style: preserve-3d;
+        width: fit-content;
+        transform-origin: 0% 30%;
+    }
+}

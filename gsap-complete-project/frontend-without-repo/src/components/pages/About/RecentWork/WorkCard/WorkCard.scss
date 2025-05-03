@@ -1,0 +1,60 @@
+@use "../../../../../assets/theme/_var.scss";
+
+.work_card_design {
+    .work_card_design_in {
+        display: flex;
+        align-items: center;
+
+        .card_left {
+            h3 {
+                text-transform: uppercase;
+                font-size: 4rem;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 2.6rem;
+                font-weight: 400;
+                margin: 2rem 0;
+            }
+
+            button {
+                width: 18rem;
+                height: 5rem;
+                border-radius: 50rem;
+                font-size: 1.6rem;
+                font-weight: 500;
+                background-color: var.$bodybg;
+                border: 2px solid var.$lighttextclr;
+                outline: none;
+                color: white;
+            }
+        }
+
+        .card_img {
+            width: 600px;
+            overflow: hidden;
+            margin-left: auto;
+
+            img {
+                width: 100%;
+                scale: 2;
+                height: 100%;
+            }
+        }
+    }
+    &:not(:last-child){
+        margin-bottom: 10rem;
+    }
+
+    &.right {
+        .work_card_design_in {
+            flex-direction: row-reverse;
+
+            .card_img {
+                margin-right: auto;
+                margin-left: 0;
+            }
+        }
+    }
+}

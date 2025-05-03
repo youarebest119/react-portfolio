@@ -1,0 +1,20 @@
+@import "../../../assets/theme/_var.scss";
+
+.team_slider {
+    height: 800vh;
+    position: relative;
+
+    ul {
+        display: flex;
+        position: sticky;
+        padding: 30vh 0;
+        top: 0;
+        transform-origin: right;
+        flex-wrap: nowrap;
+
+        >li {
+            width: fit-content;
+            flex-shrink: 0;
+        }
+    }
+}

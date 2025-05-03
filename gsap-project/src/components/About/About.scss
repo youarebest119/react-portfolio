@@ -1,0 +1,35 @@
+@import "../../assets/theme/_var.scss";
+
+.about_sec {
+    box-shadow: 0 -10rem 5rem 4rem $black20;
+    background-color: $black20;
+    z-index: 3;
+    position: relative;
+
+    h2 {
+        font-size: clamp(2.4rem,
+                2.60416667vw,
+                5rem);
+        max-width: 89rem;
+        font-weight: 600;
+        letter-spacing: 0.4rem;
+        line-height: 1.6;
+        margin-bottom: 28.7rem;
+    }
+
+    .animate_asset {
+        max-width: 60rem;
+    }
+
+    h3 {
+        font-size: clamp(2rem, 1.5625vw, 3rem);
+        font-weight: 600;
+        padding-left: 6rem;
+        letter-spacing: 0.2rem;
+        line-height: 1.6;
+
+        &:not(:last-child) {
+            margin-bottom: 6rem;
+        }
+    }
+}

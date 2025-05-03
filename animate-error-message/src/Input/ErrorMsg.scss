@@ -1,0 +1,10 @@
+.error {
+    transition: height 100ms ease-in-out, opacity 200ms ease-in-out;
+    opacity: 1;
+
+    &:empty {
+        opacity: 0;
+    }
+
+    // overflow: hidden;
+}

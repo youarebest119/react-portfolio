@@ -1,0 +1,71 @@
+@import "../../../assets/theme/_var.scss";
+
+.home {
+    .input {
+        height: 40px;
+        width: 100%;
+        border: 2px solid rgba($baseclr, 0.5);
+        outline: none;
+
+        &:focus {
+            border-color: $baseclr;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-inline: -10px;
+
+        li {
+            width: 100%;
+            padding: 10px;
+
+            a {
+                height: 100%;
+                width: 100%;
+                display: block;
+                padding: 20px;
+                border: 2px solid $baseclr;
+                color: $baseclr;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 600;
+                z-index: 1;
+                transition: 300ms ease-in-out;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    width: 0%;
+                    height: 100%;
+                    background-color: $baseclr;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    transition: 300ms ease-in-out;
+                    z-index: -1;
+                }
+
+                &:hover {
+                    color: white;
+
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $baseclr;
+        z-index: 2;
+    }
+}

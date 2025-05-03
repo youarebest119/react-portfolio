@@ -1,0 +1,72 @@
+body {
+    overscroll-behavior: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Mont", sans-serif;
+    overflow-x: hidden;
+}
+
+#smooth-content {
+    overflow: visible;
+    width: 100%;
+}
+
+.intro {
+    height: 200dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .intro_in {
+        display: flex;
+        align-items: center;
+        padding: 60px 20px;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        position: sticky;
+        top: 0;
+
+        h1 {
+            font-size: clamp(40px, 4.25vw, 80px);
+            line-height: 1.6;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.layers {
+    position: relative;
+
+    svg {
+        position: fixed;
+    }
+}
+
+.flair {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    background-image: url("https://assets.codepen.io/16327/flair.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+
+.mouse_move {
+    padding: 10px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}

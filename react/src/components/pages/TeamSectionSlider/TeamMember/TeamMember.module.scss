@@ -1,0 +1,15 @@
+@import "../../../../assets/theme/_var.scss";
+
+.member {
+    text-align: center;
+    width: 400px;
+
+    img {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        object-position: center;
+        background-color: white;
+        border-radius: 10px;
+    }
+}

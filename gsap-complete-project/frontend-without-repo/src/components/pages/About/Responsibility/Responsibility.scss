@@ -1,0 +1,132 @@
+@use "../../../../assets/theme/_var.scss";
+
+.responsibility_design {
+    background: url("../../../../assets/images/responsibility-grid.png") center/contain no-repeat, url("../../../../assets/images/responsibility-bg.png") top center/cover no-repeat;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+    position: relative;
+    z-index: 1;
+    position: relative;
+
+    .design_in {
+        width: 100%;
+        text-align: center;
+
+        .small_badge {
+            box-shadow: 0.3rem 0.3rem 0.8rem 0 rgba(var.$white, 0.25) inset, -0.3rem -0.3rem 0.8rem 0 rgba(var.$white, 0.25) inset;
+            border-radius: 5rem;
+            width: fit-content;
+            padding: 0.4rem 2.4rem;
+            font-size: 1.4rem;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 6rem;
+            font-weight: 600;
+            margin: 2rem 0;
+        }
+
+        >p {
+            font-size: 1.6rem;
+            max-width: 54rem;
+            margin: 0 auto;
+            font-weight: 600;
+        }
+
+        .design_cards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90rem;
+            margin: 4rem auto 0;
+            flex-wrap: wrap;
+            perspective: 1000px;
+
+            >div {
+                padding: 1.6rem;
+                width: calc(100% / 3);
+
+                &.up_card {
+                    .custom_card {
+                        margin-top: -7.2rem;
+                    }
+                }
+
+                .custom_card {
+                    box-shadow: 0.3rem 0.3rem 0.8rem 0 rgba(var.$white, 0.25) inset, -0.3rem -0.3rem 0.8rem 0 rgba(var.$white, 0.25) inset;
+                    border-radius: 1.6rem;
+                    min-height: 30rem;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 2.4rem;
+                    transform-style: preserve-3d;
+
+                    // transform: translateY(100%);
+                    // opacity: 0;
+                    // filter: blur(1rem);
+                    //     yPercent: 100,
+                    //     opacity: 0,
+                    //     filter: "blur(1rem)",
+                    // transition: 300ms ease-in-out;
+
+                    &:hover {
+                        box-shadow: 0.6rem 0.6rem 0.8rem 0 rgba(var.$white, 0.25) inset, -0.6rem -0.6rem 0.8rem 0 rgba(var.$white, 0.25) inset, 0.2rem 0.2rem 0.8rem 0 rgba(var.$white,  0.25);
+                    }
+
+                    h3 {
+                        font-size: 2.4rem;
+                    }
+
+                    p {
+                        margin-top: auto;
+                        font-size: 6rem;
+                        overflow: hidden;
+                        position: relative;
+                        width: fit-content;
+                        line-height: 1;
+
+                        // .copy_word {
+                        //         position: absolute;
+                        //         top: 50%;
+                        //         left: 50%;
+                        //         transform: translate(-50%, -50%);
+                        // }
+                        .word {
+                            display: block;
+                        }
+
+                        .l {
+                            &:last-child {
+                                position: absolute !important;
+                                width: 100%;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                // .c {
+                                //     transform: translateY(100%);
+                                // }
+                            }
+                        }
+                    }
+
+                    &.img_card {
+                        padding: 1.6rem;
+
+                        >img {
+                            border-radius: 0.8rem;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                            height: 35rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

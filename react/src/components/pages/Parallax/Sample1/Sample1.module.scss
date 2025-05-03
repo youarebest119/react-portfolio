@@ -1,0 +1,37 @@
+@import "../../../../assets/theme/_var.scss";
+
+.sample {
+    padding: 100px 0;
+
+    h2 {
+        font-size: 50px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .box {
+        position: relative;
+        margin: auto;
+        max-width: 500px;
+
+        .box_left {
+            position: absolute;
+            bottom: 60px;
+            right: calc(100% - 200px);
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .box_right {
+            position: absolute;
+            top: 80px;
+            left: calc(100% - 100px);
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+
+        }
+    }
+}

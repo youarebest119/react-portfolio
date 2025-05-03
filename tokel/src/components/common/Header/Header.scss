@@ -1,0 +1,77 @@
+@import "../../../assets/theme/_var.scss";
+
+.header {
+    .container {
+        max-width: 151.9rem;
+    }
+
+    .header_in {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.5rem 0;
+
+        .logo {
+            svg {
+                height: 4.6rem;
+            }
+        }
+
+        .header_nav {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    &:not(:last-child) {
+                        margin-right: 6rem;
+                    }
+
+                    a {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 2rem;
+                        text-align: center;
+                        color: $gray;
+                        transition: 200ms ease-in-out;
+                        position: relative;
+
+                        span {
+                            transition: 200ms ease-in-out;
+                        }
+
+                        &::before {
+                            content: "";
+                            width: 1.4rem;
+                            height: 1.4rem;
+                            background-image: url("../../../assets/logos/logo.svg");
+                            position: absolute;
+                            top: calc(50% + 0.1rem);
+                            left: 0;
+                            transform: translate(100%, -50%);
+                            transition: 200ms ease-in-out;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            opacity: 0;
+                        }
+
+                        &:hover,
+                        &.active {
+                            color: $baseclr;
+
+                            &::before {
+                                transform: translate(0, -50%);
+                                opacity: 1;
+                            }
+
+                            span {
+                                transform: translateX(2rem);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

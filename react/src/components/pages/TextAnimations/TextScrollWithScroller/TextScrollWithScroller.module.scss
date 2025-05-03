@@ -1,0 +1,22 @@
+@import "../../../../assets/theme/_var.scss";
+
+.banner {
+    height: 800vh;
+    position: relative;
+
+    >div {
+        display: flex;
+        position: sticky;
+        padding: 100px 0;
+        top: 0;
+        transform-origin: right;
+        flex-wrap: nowrap;
+
+        h1 {
+            font-size: 60vh;
+            font-family: "Chillax-Variable";
+            font-stretch: 260%;
+            white-space: nowrap;
+        }
+    }
+}

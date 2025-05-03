@@ -1,0 +1,60 @@
+@use "../../../../assets/theme/_var.scss" as *;
+
+.gallery_design {
+    margin-top: -100dvh;
+    z-index: 0;
+    background-color: $cardbg;
+
+    .gallery_in {
+        height: 100dvh;
+        padding: 1rem;
+        display: flex;
+        border-radius: 1rem;
+        overflow: clip;
+
+        .gallery_content {
+            display: flex;
+            border-radius: 1rem;
+            width: 50%;
+            background-color: $bodybg;
+            position: relative;
+
+            h4 {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 4rem;
+                font-weight: 600;
+
+                &:not(:first-child) {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: $bodybg;
+                }
+            }
+        }
+
+        .gallery_view {
+            width: 50%;
+            overflow: clip;
+            position: relative;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 2rem;
+
+                &:not(:first-child) {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}

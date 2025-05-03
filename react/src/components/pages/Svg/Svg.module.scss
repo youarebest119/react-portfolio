@@ -1,0 +1,19 @@
+@import "../../../assets/theme/_var.scss";
+
+.svg {
+    background-color: rgb(113, 110, 254);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    :global {
+        .item {
+            overflow: visible;
+            stroke: #fff;
+            stroke-width: 1;
+            stroke-linejoin: round;
+            stroke-linecap: round;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@use "../../../../assets/theme/_var.scss";
+
+.bts_design {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+
+    .container {
+        max-width: 86rem;
+    }
+
+    .bts_design_in {
+        position: relative;
+
+        h3 {
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 8rem;
+            width: 100%;
+            z-index: 2;
+
+            span {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            &:first-child {
+                top: 0;
+                transform: translateY(-50%) translateX(-50%);
+            }
+
+            &:last-child {
+                bottom: 0;
+                transform: translateY(50%) translateX(-50%);
+            }
+        }
+
+        .bts_design_box {
+            height: 60dvh;
+            overflow: clip;
+            border-radius: 4rem;
+
+            .design_box_gallery {
+                height: 100%;
+
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                    width: 100%;
+                    border-radius: 4rem;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

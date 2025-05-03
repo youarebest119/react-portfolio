@@ -1,0 +1,26 @@
+@import "../../../../assets/theme/_var.scss";
+
+.lable {
+    display: flex;
+    align-items: center;
+    background-color: rgba(green, 0.4);
+    padding: 10px 24px;
+
+    p {
+        color: green;
+    }
+
+    button {
+        margin-left: auto;
+        background-color: transparent;
+        border: none;
+        background-color: rgba(green, 0.2);
+        border-radius: 4px;
+
+        svg {
+            path {
+                fill: green;
+            }
+        }
+    }
+}

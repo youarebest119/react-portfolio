@@ -1,0 +1,18 @@
+@import "../../../../assets/theme/_var.scss";
+
+.text_animate {
+    color: inherit;
+
+    >div {
+        color: inherit;
+        display: inline-block;
+        font-weight: inherit;
+        font-size: inherit;
+
+        span {
+            color: inherit;
+            font-weight: inherit;
+            font-size: inherit;
+        }
+    }
+}

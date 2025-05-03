@@ -1,0 +1,52 @@
+@import "../../../../assets/theme/_var.scss";
+
+.features_design {
+    position: relative;
+
+    h2 {
+        font-size: 8rem;
+        font-weight: 600;
+    }
+
+    .features_design_in {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .features_experience {
+        height: 100dvh !important;
+        // position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .features_boxes {
+        .feature_box {
+            min-height: 100dvh;
+            display: flex;
+            align-items: center;
+
+            .feature_box_design {
+                padding: 2.4rem;
+                background-color: rgb(10, 10, 10);
+                border-radius: 1rem;
+                border: 2px solid rgb(30, 30, 30);
+
+                h3 {
+                    font-size: 4rem;
+                    font-weight: 600;
+                }
+
+                p {
+                    line-height: 1.6;
+                    margin-top: 4rem;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

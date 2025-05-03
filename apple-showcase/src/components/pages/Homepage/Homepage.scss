@@ -1,0 +1,23 @@
+@import "../../../assets/theme/_var.scss";
+
+.page_video {
+    width: 100%;
+    height: 100dvh;
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        object-position: center;
+    }
+}
+
+.text_section {
+    position: relative;
+    z-index: 10;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

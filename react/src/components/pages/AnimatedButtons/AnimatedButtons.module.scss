@@ -1,0 +1,16 @@
+@import "../../../assets/theme/_var.scss";
+
+.buttons {
+    padding: 100px 0;
+
+    ul {
+        margin: -30px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        li {
+            padding: 30px;
+        }
+    }
+}

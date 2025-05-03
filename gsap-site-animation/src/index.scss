@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "./assets/theme/_var.scss";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: #fffce1;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
+  margin-bottom: 0;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clickable {
+  cursor: pointer !important;
+}
+
+.modal {
+  &.fade {
+    .modal-dialog {
+      transform: scale(0.9);
+      opacity: 0;
+      transition: 400ms ease-in-out;
+    }
+
+    &.show {
+      .modal-dialog {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.modal-backdrop {
+  transition: 400ms ease-in-out;
+
+  &.show {
+    opacity: 1;
+    background-color: rgba(black, 0.5);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.table {
+  --bs-table-bg: transparent;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: black !important;
+}
+
+//  z -indexes
+.z-xlg {
+  z-index: 15 !important;
+}
+
+.z-lg {
+  z-index: 10 !important;
+}
+
+.z-md {
+  z-index: 5 !important;
+}
+
+.z-low {
+  z-index: 1 !important;
+}
+
+// toast
+.go4109123758 {
+  font-size: 1.4rem;
+}
+
+.row {
+  margin: -0.75rem;
+
+  >div {
+    padding: 0.75rem;
+  }
+}
+
+.container {
+  max-width: 103rem;
+  padding: 0 1.5rem;
+}
+
+.aplication {
+  white-space: nowrap;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  overflow: clip;
+
+  .content {
+    display: flex;
+    align-items: center;
+    min-height: 100dvh;
+
+    >section {
+      flex-shrink: 0;
+      min-width: 100vw;
+      background-color: black;
+
+      h4 {
+        font-size: clamp(60px, 4vw, 100px);
+        text-align: center;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 12rem;
+    display: flex;
+
+    .nice {
+      transform-origin: left;
+      color: black;
+      border-radius: 8px;
+      background: linear-gradient(114.41deg, #0ae448 20.74%, #abff84 65.5%);
+      padding: 8px 14px;
+    }
+
+    .easy {
+      position: relative;
+
+      span {
+        position: absolute;
+        transform: translateX(-50%) translateY(-40%);
+        background: linear-gradient(153.58deg, #f7bdf8 32.25%, #2f3cc0 92.68%);
+        color: black;
+        font-size: 4rem;
+        border-radius: 8px;
+        padding: 8px 18px;
+        z-index: 6;
+        box-shadow: 2rem 2rem 0 0 rgba(black, 0.4);
+      }
+    }
+
+    .easing {
+      background: linear-gradient(111.45deg, #ff8709 19.42%, #f7bdf8 73.08%);
+      align-self: center;
+      transform: rotate(15.6deg);
+      font-size: 4rem;
+      border-radius: 8px;
+      margin: 0 14px;
+      padding: 8px 18px;
+    }
+
+    .super {
+      position: relative;
+      perspective: 1000px;
+
+      span {
+        background-color: #0ae448;
+        border-radius: 8px;
+        padding: 0px 16px;
+        line-height: 1.4;
+        color: black;
+        font-size: 9rem;
+        transform: translateY(-65%) rotate(8deg);
+        transform-origin: top;
+        position: absolute;
+      }
+    }
+
+    .play {
+      position: relative;
+
+      .star {
+        position: absolute;
+        display: flex;
+        left: 0;
+        top: 100%;
+        transform: translateX(-100%) translateY(100%);
+
+        svg {
+          width: 100px;
+          height: auto;
+        }
+      }
+
+      .curves {
+        position: absolute;
+        bottom: 100%;
+        left: 100%;
+        transform: translateX(-100%);
+        display: flex;
+
+        svg {
+          width: 160px;
+          max-width: unset;
+          height: auto;
+
+          &#curved-line-toggle-one {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            transform: translateY(60%);
+            transform-origin: right;
+          }
+
+          &#curved-line-toggle-two {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transform: translateY(35%);
+            transform-origin: right;
+          }
+        }
+      }
+
+      .plug_outer {
+        width: 515px;
+      }
+
+      .plug {
+        font-size: 6rem;
+        color: black;
+        padding: 8px 16px;
+        border-radius: 8px;
+        transform: translateY(40%) rotate(-8deg);
+        margin: 0 20px;
+        background: #fec5fb;
+        width: fit-content;
+
+        .w {
+          &:nth-child(2) {
+            padding-inline: 3rem;
+            position: relative;
+            flex-shrink: 0;
+
+            &::before,
+            &::after {
+              content: "-";
+              position: absolute;
+            }
+
+            &::before {
+              left: 0;
+            }
+
+            &::after {
+              right: 0;
+            }
+          }
+        }
+      }
+
+    }
+
+    .custom {
+      perspective: 1000px;
+
+      div {
+        transform-origin: bottom;
+      }
+    }
+
+    .choreograph {
+      background: #fec5fb;
+      padding: 0px 16px;
+      color: black;
+      box-shadow: 2rem 2rem 0 0 rgba(black, 0.4);
+      border-radius: 8px;
+      font-size: 10rem;
+      margin: 0 20px;
+      line-height: 1.5;
+      z-index: 5;
+      position: relative;
+    }
+
+    .animation {
+      position: relative;
+
+      span {
+        background-color: aliceblue;
+        padding: 0px 16px;
+        color: black;
+        border-radius: 8px;
+        font-size: 10rem;
+        line-height: 1.5;
+        position: absolute;
+        margin: 10px 0;
+        transform: translateY(100%) translateX(-50%);
+      }
+    }
+
+    .sequence_icon {
+      margin: 0 30px;
+    }
+
+    .sequences {
+      background: #ff8709;
+      padding: 0px 16px;
+      color: black;
+      border-radius: 8px;
+      font-size: 10rem;
+      margin: 0 20px;
+      line-height: 1.5;
+    }
+
+    .snap {
+      margin-left: 30px;
+      transform-origin: left;
+
+      .snap_icon {
+        svg {
+          width: 100px;
+          height: auto;
+        }
+      }
+    }
+  }
+}

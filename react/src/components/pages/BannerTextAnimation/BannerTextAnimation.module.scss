@@ -1,0 +1,19 @@
+@import "../../../assets/theme/_var.scss";
+
+.banner {
+    .banner_text {
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+h1 {
+    div {
+        display: inline-block;
+    }
+}

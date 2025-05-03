@@ -1,0 +1,53 @@
+@use "../../../../assets/theme/_var.scss";
+
+.recent_project_design {
+    padding: 10rem 0;
+    // background-color: $cardbg;
+    margin-top: 10rem;
+
+    .container {
+        max-width: 1800px;
+    }
+
+    h3,
+    h2 {
+        >div {
+            position: relative;
+            color: rgba(var.$white, 0.1);
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                color: white;
+                clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);
+            }
+        }
+    }
+
+    h3 {
+        font-size: 8rem;
+        font-weight: 700;
+        width: fit-content;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+    }
+
+    h2 {
+        width: fit-content;
+        font-size: 14rem;
+        text-align: center;
+        margin: 4rem auto 0;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    .recent_project_image {
+        background-color: #c0d4f4;
+        height: 100dvh;
+        overflow: hidden;
+        padding-top: 6rem;
+    }
+}

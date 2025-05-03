@@ -1,0 +1,56 @@
+@import "../../../../assets/theme/_var.scss";
+
+.animation {
+    .tabs {
+        box-shadow: 0px 4px 94px 0px rgba(0, 0, 0, 0.25);
+        background-color: white;
+        max-width: 560px;
+        // position: fixed;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        border-radius: 8px;
+        width: 100%;
+
+        .nav {
+            display: flex;
+            border-bottom: 2px solid rgba(246, 246, 247, 1);
+            padding: 0 24px;
+
+            button {
+                font-family: $basefont;
+                padding: 15px 4px 17px;
+                border: none;
+                border-bottom: 2px solid rgba(206, 38, 162, 1);
+                outline: none;
+                font-size: 14px;
+                line-height: 1;
+                background-color: transparent;
+            }
+        }
+
+        .content {
+            padding: 0 24px 24px;
+
+            h3 {
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 18px;
+                letter-spacing: 0em;
+                margin: 2px 0;
+                text-align: right;
+                color: rgba(60, 60, 67, 0.56);
+                margin-right: -16px;
+            }
+
+            >div {
+                font-family: "Consolas";
+
+                span {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@use "../../../../assets/theme/_var.scss";
+
+.heights_design {
+    background: url("../../../../assets/images/home0.jpeg.webp") center/cover no-repeat;
+    height: 100dvh;
+    display: flex;
+
+    >div {
+        width: calc(100% / 7);
+        background-color: var.$bodybg;
+            outline: 2px solid var.$bodybg;
+        transform-origin: top center;
+        
+        &:nth-child(3),
+        &:nth-child(4) {
+            transform-origin: bottom center;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+@import "../../../assets/theme/_var.scss";
+
+.asset_token {
+    padding: 13.6rem 0 14.4rem;
+    position: relative;
+    background-color: $white;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(360deg, rgba(197, 211, 232, 0) 0%, rgba(197, 211, 232, 0.2) 97.98%);
+        box-shadow: 0 -2rem 2rem 1rem rgba(197, 211, 232, 0.2);
+    }
+
+    .asset_token_content {
+        h2 {
+            font-size: 5rem;
+            font-weight: 700;
+            line-height: 6.3rem;
+            color: $baseclr;
+            margin-bottom: 3rem;
+
+            .l {
+                overflow: clip;
+            }
+
+            .light {
+                font-weight: 250;
+                // word-break: break-word;
+            }
+        }
+
+        p {
+            font-size: 400;
+            font-size: 1.8rem;
+            color: $gray;
+            padding-right: 1rem;
+
+            .l {
+                overflow: clip;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .asset_token_img {
+        .asset_token_img_in {
+            position: relative;
+            background-image: url("../../../assets/icons/asset_tokenization/asset_tokenization-bg.svg");
+            width: 59rem;
+            height: 59rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                position: absolute;
+
+                &.icon-1 {
+                    top: 3rem;
+                    left: 30%;
+                }
+
+                &.icon-2 {
+                    top: -1rem;
+                    right: 20%;
+                }
+
+                &.icon-3 {
+                    top: 35%;
+                    transform: translateY(-100%);
+                    right: 6rem;
+                }
+
+                &.icon-4 {
+                    bottom: 45%;
+                    transform: translateY(100%);
+                    right: 1rem;
+                }
+
+                &.icon-5 {
+                    bottom: -12px;
+                    transform: translateY(-100%) translateX(100%);
+                    right: 40%;
+                }
+
+                &.icon-6 {
+                    bottom: 7%;
+                    left: 9rem;
+                }
+
+                &.icon-7 {
+                    bottom: 31%;
+                    transform: translateY(-100%);
+                    left: 3rem;
+                }
+
+                &.icon-8 {
+                    top: 35%;
+                    transform: translateY(-100%);
+                    left: 0;
+                }
+            }
+        }
+    }
+}

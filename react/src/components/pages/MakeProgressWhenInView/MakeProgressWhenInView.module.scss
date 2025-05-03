@@ -1,0 +1,61 @@
+@import "../../../assets/theme/_var.scss";
+
+.circular_progress {
+
+    .indicator {
+        stroke: $baseclr;
+    }
+
+    circle {
+        stroke-dashoffset: 0;
+        stroke-width: 15%;
+        fill: none;
+    }
+
+    .indicator_bg {
+        stroke: $baseclr;
+        opacity: 0.3;
+    }
+}
+
+.section {
+    ul {
+        margin-inline: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            flex: 0 0 calc(100% / 3);
+            padding: 30px;
+
+            .card {
+                background-color: rgba(white, 0.9);
+                backdrop-filter: blur(10px);
+                padding: 40px;
+                border: 1px solid transparent;
+                border-radius: 10px;
+                // transition: 200ms ease-in-out;
+
+                // &:hover {
+                //     box-shadow: -20px -20px #D1D0F5;
+                //     transform: translate(10px, 10px);
+                // }
+
+                &_in {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+
+                    span {
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

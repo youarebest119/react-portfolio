@@ -1,0 +1,107 @@
+@use "../../../../assets/theme/_var.scss" as *;
+
+.features_design {
+    margin-top: -100dvh;
+    padding: 2rem;
+    overflow: clip;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+
+    .features_in {
+        border-radius: 1rem;
+        overflow: clip;
+        position: relative;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+        >img {
+            height: calc(100dvh - 4rem);
+            min-height: 60rem;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .features_cards {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            .feature_card {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    // width: calc(100vw - 5.5rem);
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    max-width: unset;
+                    position: absolute;
+                }
+
+                h3 {
+                    font-size: 4rem;
+                    color: white;
+                    z-index: 2;
+                    position: absolute;
+                    top: 4rem;
+                    left: 4rem;
+
+                }
+
+                &.feature_left_card {
+                    clip-path: inset(0 round 0 2rem 2rem 0);
+
+                    img {
+                        filter: grayscale(48%) sepia(61%) brightness(80%) hue-rotate(199deg) saturate(109%) contrast(143%) invert(9%);
+                        -webkit-filter: grayscale(48%) sepia(61%) brightness(80%) hue-rotate(199deg) saturate(109%) contrast(143%) invert(9%);
+                        -moz-filter: grayscale(48%) sepia(61%) brightness(80%) hue-rotate(199deg) saturate(109%) contrast(143%) invert(9%);
+                        left: 0;
+                    }
+                }
+
+                &.feature_right_card {
+                    clip-path: inset(0 round 2rem 0 0 2rem);
+                    right: 0;
+                    left: unset;
+
+                    img {
+                        filter: grayscale(18%) sepia(94%) brightness(55%) hue-rotate(199deg) saturate(288%) contrast(104%);
+                        -webkit-filter: grayscale(18%) sepia(94%) brightness(55%) hue-rotate(199deg) saturate(288%) contrast(104%);
+                        -moz-filter: grayscale(18%) sepia(94%) brightness(55%) hue-rotate(199deg) saturate(288%) contrast(104%);
+                        object-position: center;
+                        right: 0;
+                    }
+                }
+            }
+        }
+
+        .features_cards_text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            pointer-events: none;
+
+            .features_txt_card {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h3 {
+                    font-size: 5rem;
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

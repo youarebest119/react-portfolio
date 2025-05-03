@@ -1,0 +1,32 @@
+@import "../../../assets/theme/_var.scss";
+
+
+
+.main_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+    .main_bg {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+    }
+
+}
+
+.sampel_text {
+    p {
+        font-size: 20px;
+        color: white;
+    }
+}

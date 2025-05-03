@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wdth,wght@75..100,400..900&display=swap');
+
+#text-2 {
+    .box {
+        background-color: #FDF9F3;
+        // height: 100vh;
+        // scroll-snap-type: mandatory;
+        // scroll-snap-points-y: repeat(100vh);
+        // scroll-snap-type: y mandatory;
+        // overflow-y: scroll;
+        // scroll-behavior: smooth;
+
+        // >div {
+        //     scroll-snap-align: start;
+        // }
+
+        .banner-box {
+            h3 {
+                font-size: clamp(10rem, 5.5vw, 16rem);
+                color: rgb(44, 42, 42);
+                font-weight: 400;
+
+                .light {
+                    color: rgb(219, 219, 214);
+                }
+
+                .ms {
+                    margin-left: 20%;
+                }
+
+                .l {
+                    overflow: clip;
+                }
+            }
+        }
+
+        .banner-two {
+            background-color: black;
+
+            h3 {
+                font-size: clamp(10rem, 5.5vw, 16rem);
+                text-transform: uppercase;
+                color: white;
+                font-weight: 700;
+                width: 100%;
+
+                .light {
+                    color: rgb(231, 231, 132);
+                }
+
+                .ms {
+                    margin-left: 20%;
+                }
+
+                .l {
+                    overflow: clip;
+                    border-bottom: 1px solid rgba(white, 0.3);
+
+                    >div {
+                        max-width: 880px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        .banner-three {
+            h3 {
+                font-size: 80vh;
+                line-height: 1;
+                font-family: "Tektur", sans-serif;
+                font-variation-settings: "wdth" 75;
+                font-weight: 500;
+            }
+        }
+
+        .rally_banner,
+        .revive_banner {
+
+            .rally_banner_one,
+            .revive_banner_one {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                min-height: 100dvh;
+                // background: rgb(117, 177, 223);
+                // background: linear-gradient(309deg, rgba(117, 177, 223, 1) 0%, rgba(89, 198, 226, 1) 100%);
+                // background: rgb(59, 208, 171);
+                // background: linear-gradient(309deg, rgba(59, 208, 171, 1) 0%, rgba(77, 190, 184, 1) 100%);
+            }
+
+            h3 {
+                text-transform: uppercase;
+                font-size: 50vh;
+                font-family: "Tektur", sans-serif;
+            }
+
+            p {
+                font-size: 20px;
+                width: 100%;
+                background-color: rgb(235, 235, 46);
+                max-width: 600px;
+                padding: 10px 20px;
+                overflow: hidden;
+                font-family: "Tektur", sans-serif;
+                border-radius: 1px;
+                text-transform: uppercase;
+                font-stretch: ultra-expanded;
+                font-weight: 700;
+            }
+        }
+
+        .revive_banner {
+            z-index: 8;
+            position: relative;
+
+            .revive_banner_one {
+                h3 {
+                    font-weight: 500;
+                    letter-spacing: 10px;
+                    font-stretch: condensed;
+                }
+            }
+        }
+    }
+}

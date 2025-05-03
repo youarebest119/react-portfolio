@@ -1,0 +1,36 @@
+#flip-example-three {
+    .container {
+        padding: 100px 0;
+    }
+
+    .wrapper {
+        min-height: 100dvh;
+        border: 10px solid rgba(white, 0.2);
+        display: flex;
+        position: relative;
+        align-items: center;
+
+        >div {
+            width: 100%;
+        }
+
+        &#wrapper-2 {
+            border-color: red;
+        }
+    }
+
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(16, 96, 35);
+        position: relative;
+        z-index: 4;
+
+        &#box-2 {
+            z-index: 2;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import "../../../../assets/theme/_var.scss";
+
+.btn {
+    height: 70px;
+    position: relative;
+    padding-inline: 42px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid $baseclr;
+    overflow: hidden;
+    color: white;
+    background-color: transparent;
+    border-radius: 100px;
+    background-color: rgba(236, 167, 90, 0.8);
+    z-index: 1;
+
+    span {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        z-index: -1;
+        transition: 200ms ease-out;
+    }
+
+    &:hover {
+        span {
+            opacity: 1;
+        }
+    }
+}

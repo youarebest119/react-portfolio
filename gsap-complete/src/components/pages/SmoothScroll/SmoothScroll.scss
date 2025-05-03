@@ -1,0 +1,84 @@
+.smooth_scroll_page {
+    .scroll_top_top {
+        position: fixed;
+        bottom: 1.6rem;
+        right: 1.6rem;
+        z-index: 3;
+    }
+
+    .my_content {
+        padding: 10rem 0;
+
+
+        .title {
+            text-align: center;
+        }
+
+        .boxes {
+            display: flex;
+            gap: 3rem;
+            justify-content: center;
+            margin: 100dvh 0;
+
+            .box {
+                width: 100px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 4rem;
+                font-weight: 800;
+                color: black;
+
+                &.box-a {
+                    background-color: blue;
+                }
+
+                &.box-b {
+                    background-color: red;
+                }
+
+                &.box-c {
+                    background-color: green;
+                }
+
+                &.box-d {
+                    background-color: orange;
+                }
+            }
+
+            .extra_line {
+                font-size: 2rem;
+            }
+        }
+
+        .smooth_images {
+            .image_wrapper {
+                height: 60dvh;
+                position: relative;
+                overflow: clip;
+                width: 500px;
+                max-height: 500px;
+                margin-bottom: 20dvh;
+
+                img {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    object-fit: cover;
+                    height: 140%;
+                }
+            }
+        }
+    }
+}
+
+.black_modal {
+    .modal-content {
+        padding: 3rem;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        background-color: rgb(26, 25, 25);
+    }
+}
