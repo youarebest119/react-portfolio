@@ -1,0 +1,17 @@
+@import "../../../../../assets/theme/_var.scss";
+
+.like_btn {
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+
+    .animation {
+        position: absolute;
+        width: 174px;
+        left: 50%;
+        top: 50%;
+        translate: -50% -61%;
+    }
+}

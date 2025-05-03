@@ -1,0 +1,27 @@
+@import "../../../assets/theme/_var.scss";
+
+.social_media {
+    position: fixed;
+    bottom: 3rem;
+    right: 4rem;
+    z-index: $header;
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            &:not(:last-child) {
+                margin-right: 1.6rem;
+            }
+
+            a {
+
+                svg {
+                    width: 4.2rem;
+                    height: 4.2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import "../../../../assets/theme/_var.scss";
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    text-align: center;
+
+    h1 {
+        font-size: 16rem;
+        font-family: $secondaryfont;
+        perspective: 1000px;
+
+        span {
+            font-family: $basefont;
+            display: inline;
+            font-weight: 900;
+        }
+    }
+
+    .txt {
+        margin-top: 4rem;
+
+        >div {
+            overflow: clip;
+
+            >div {
+                font-size: 2.4rem;
+                line-height: 2;
+            }
+        }
+    }
+}

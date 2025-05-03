@@ -1,0 +1,29 @@
+@import "../../../assets/theme/_var.scss";
+
+.layout {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+
+    :global {
+        .container {
+            max-width: 100%;
+            padding-inline: 4rem;
+        }
+    }
+
+    section {
+        padding: 8rem 0;
+        min-height: 100dvh;
+
+        :global {
+            .container {
+                padding-inline: 12rem;
+            }
+        }
+
+        &:first-of-type {
+            padding-top: 10rem;
+        }
+    }
+}

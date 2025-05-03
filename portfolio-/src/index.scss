@@ -1,0 +1,77 @@
+@import "./assets/theme/_var.scss";
+
+html {
+  font-size: 62.5%;
+  position: relative;
+}
+
+body {
+  font-optical-sizing: auto;
+  font-family: $basefont;
+  font-style: normal;
+  background-color: $body;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+img,
+svg,
+canvas,
+video,
+iframe {
+  max-width: 100%;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a,
+span {
+  display: inline-block;
+  text-decoration: none;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

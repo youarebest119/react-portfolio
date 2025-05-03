@@ -1,0 +1,13 @@
+@import "../../../../../assets/theme/_var.scss";
+
+.item {
+    position: relative;
+    z-index: 1;
+
+    h3 {
+        font-size: 12rem;
+        line-height: 2;
+        white-space: nowrap;
+        text-transform: uppercase;
+    }
+}

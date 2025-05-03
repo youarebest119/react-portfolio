@@ -1,0 +1,30 @@
+@import "../../../../assets/theme/_var.scss";
+
+.skills {
+    position: relative;
+
+    :global {
+        .container {
+            max-width: 1920px;
+        }
+    }
+
+    .row {
+        display: flex;
+
+        .col_left {
+            width: 25%;
+
+            h2 {
+                position: sticky;
+                top: 50vh;
+                font-size: 5rem;
+            }
+        }
+
+        .col_right {
+            margin-top: -4rem;
+            margin-bottom: -4rem;
+        }
+    }
+}
